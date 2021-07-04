@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- without the , default is still GET request -->
+	<form action="T3ServletWithParameter" method="post">
+		user name:<input name="userName" />
+		full name:<input name="fullName" />
+		job: <!-- radiobox -->
+		<input type="radio" name="job" value="developer">developer</input>
+		<input type="radio" name="job" value="manager">manager</input>
+		location: <!-- dropdown list -->
+		<select name="location">
+			<option value="sarawak">sarawak</option>
+			<option value="KL">kl</option>
+			<option value="penang">penang</option>
+		</select>
+		hobby: <!-- dropdown list multi select -->
+		<select name="hobby" multiple size="3">
+			<option value="game">game</option>
+			<option value="PS5">PS5</option>
+			<option value="internet">internet</option>
+			<option value="internet">books</option>
+			<option value="internet">learn</option>
+		</select>
+		<input type="submit" />
+	</form>
+</body>
+</html>
