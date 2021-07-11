@@ -24,4 +24,33 @@
 		<url-pattern>/T2ServletConfigByXMLPath</url-pattern>
 	</servlet-mapping>
 
+	<!-- this servlet is mapped by servlet-mapping tag below -->
+	<servlet>
+		<servlet-name>xmlServlet2</servlet-name>
+		<servlet-class>org.koushik.javabrains.T6ServletInitParamFromXml</servlet-class>
+		<init-param>
+			<param-name>defaultUser</param-name>
+			<param-value>johnXML</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>xmlServlet2</servlet-name>
+		<url-pattern>/T6ServletInitParamFromXml</url-pattern>
+	</servlet-mapping>
+	
+	<!-- this servlet is for JSP init param -->
+	<servlet>
+		<servlet-name>test5InitPage</servlet-name>
+		<jsp-file>/test5InitPage.jsp</jsp-file>
+		<init-param>
+			<param-name>defaultUserName</param-name>
+			<param-value>john</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test5InitPage</servlet-name>
+		<url-pattern>/test5InitPage.jsp</url-pattern>
+	</servlet-mapping>
+
 </web-app>
